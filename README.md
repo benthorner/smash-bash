@@ -56,3 +56,10 @@ Smash Bash is smashing because:
   - It gives you a smashing Git-aware prompt
 
 It also loads RVM if its installed.
+
+Credits
+=======
+
+Most of this config was snitched from [Adam Whittingham](https://github.com/AdamWhittingham/bash-config "Adam's Bash Config").
+
+Thanks Adam!
