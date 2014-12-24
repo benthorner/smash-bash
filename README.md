@@ -1,7 +1,7 @@
 smash_bash
 ==========
 
-A smashing config for bash.
+A smashing config for bash. **Warning: This will overwrite your existing config.**
 
 Install
 =======
@@ -11,8 +11,6 @@ First, the easy way.
 ```
 wget -O $HOME/.bashrc https://raw.githubusercontent.com/benthorner/smash_bash/master/.bashrc
 ```
-
-**Warning: This will overwrite your existing config.**
 
 Next, the hard(er) way.
 
@@ -31,13 +29,11 @@ Now close and restart your terminal.
 Update
 ======
 
-Again with the easy way.
+Again with the easy way. **Warning: This will overwrite your existing config (again).**
 
 ```
 wget -O $HOME/.bashrc https://raw.githubusercontent.com/benthorner/smash_bash/master/.bashrc
 ```
-
-**Warning: This will overwrite your existing config (again).**
 
 Now the difficult(er) way.
 
