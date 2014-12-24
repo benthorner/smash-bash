@@ -2,8 +2,8 @@
 ## Includes (RVM)
 ################################################################
 
-[[ -s $HOME/.rvm/bin ]] && export PATH="$PATH:$HOME/.rvm/bin"
-[[ -f $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+[ -s $HOME/.rvm/bin ] && export PATH="$PATH:$HOME/.rvm/bin"
+[ -f $HOME/.rvm/scripts/rvm ] && source $HOME/.rvm/scripts/rvm
 
 ################################################################
 ## Constants (Colours)
