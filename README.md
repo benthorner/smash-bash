@@ -44,3 +44,15 @@ git clone git@github.com:benthorner/smash_bash.git $HOME/.smash_bash
 
 That's it.
 
+Features
+========
+
+Smash Bash is smashing because:
+
+  - It has lots of Git aliases (see `alias`)
+  - It has a few Ruby aliases (use bundler with Rake, etc)
+
+  - It makes Git auto-rebase as well as look pretty
+  - It gives you a smashing Git-aware prompt
+
+It also loads RVM if its installed.
