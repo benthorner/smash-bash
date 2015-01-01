@@ -52,6 +52,8 @@ Smash Bash is smashing because:
   - It has lots of Git aliases (see `alias`)
   - It has a few Ruby aliases (use bundler with Rake, etc)
 
+  - It binds your arrow keys to autocomplete from your history
+
   - It makes Git auto-rebase as well as look pretty
   - It gives you a smashing Git-aware prompt
 
