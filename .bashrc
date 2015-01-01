@@ -19,9 +19,26 @@ red="\001$bold$(tput setaf 1)\002"
 yellow="\001$bold$(tput setaf 3)\002"
 
 ################################################################
+## Constants (Git Log)
+################################################################
+
+HASH="%C(green)%h%C(reset)"
+AGE="%C(yellow)%ar%C(reset)"
+AUTHOR="%C(bold blue)%an%C(reset)"
+REFS="%C(bold red)%d%C(reset)"
+COMMENT="%s"
+
+FORMAT="$HASH $AGE $AUTHOR $REF $COMMENT"
+OPTIONS=("--graph" "--pretty=tformat:$FORMAT")
+
+################################################################
 ## Constants (Functions)
 ################################################################
 
+git_pretty_log() {
+  git log "${OPTIONS[@]}" $* |
+  less -FXRS
+}
 function git_status_working {
   git diff --quiet &> /dev/null
   echo $?
