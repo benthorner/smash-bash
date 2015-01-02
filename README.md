@@ -47,15 +47,19 @@ That's it.
 Features
 ========
 
-Smash Bash is smashing because:
+Smash Bash is smashing because of its:
 
-  - It has lots of Git aliases (see `alias`)
-  - It has a few Ruby aliases (use bundler with Rake, etc)
+  - aliases:
+    - It has lots of Git aliases (run `alias` to see them)
+    - It has a few Ruby aliases (use bundler with Rake, etc)
 
-  - It binds your arrow keys to autocomplete from your history
+  - bindings:
+    - It makes the up/down arrow autocomplete from your history
 
-  - It makes Git auto-rebase as well as look pretty
-  - It gives you a smashing Git-aware prompt
+  - configs:
+    - It makes Git auto-rebase as well as look pretty
+    - It makes `git push` operate on the current branch
+    - It makes Vim your default editor (e.g. for Git)
 
 It also loads RVM if its installed.
 
