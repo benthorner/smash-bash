@@ -114,5 +114,9 @@ git config --global push.default current
 ## Config (Bash)
 ################################################################
 
+## Bash prompt
 export PS2="-> "
 export PS1="$(bash_prompt)\\$\$(git_prompt) "
+
+## Bash editor
+export EDITOR=vim
