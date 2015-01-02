@@ -108,6 +108,7 @@ bind '"\e[B": history-search-forward'
 
 git config --global branch.autosetuprebase always
 git config --global color.ui auto
+git config --global push.default current
 
 ################################################################
 ## Config (Bash)
