@@ -120,3 +120,9 @@ export PS1="$(bash_prompt)\\$\$(git_prompt) "
 
 ## Bash editor
 export EDITOR=vim
+
+################################################################
+## Config (Vim)
+################################################################
+
+export TERM=xterm-256color vim
