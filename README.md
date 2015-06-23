@@ -15,7 +15,7 @@ wget -O $HOME/.bashrc https://raw.githubusercontent.com/benthorner/smash_bash/ma
 Next, the hard(er) way.
 
 ```
-git clone git@github.com:benthorner/smash_bash.git $HOME/.smash_bash
+git clone https://github.com/benthorner/smash_bash.git $HOME/.smash_bash
 
 cat >> $HOME/.bashrc <<EOS
   if [ -f $HOME/.smash_bash/.bashrc ]; then
@@ -39,7 +39,7 @@ Now the difficult(er) way.
 
 ```
 rm -rf $HOME/.smash_bash
-git clone git@github.com:benthorner/smash_bash.git $HOME/.smash_bash
+git clone https://github.com/benthorner/smash_bash.git $HOME/.smash_bash
 ```
 
 That's it.
