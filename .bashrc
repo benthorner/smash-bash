@@ -79,6 +79,7 @@ function bash_prompt {
 alias cucumber='bundle exec cucumber --color'
 alias rake='bundle exec rake'
 alias rspec='bundle exec rspec --color'
+alias rubocop='bundle exec rubocop'
 
 ## Git aliases
 alias ga='git add'
