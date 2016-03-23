@@ -89,6 +89,10 @@ alias gco='git checkout'
 alias gl='git_pretty_log'
 alias gst='git status -sb'
 
+## Docker aliases
+alias 'dri'='docker run --rm -it'
+alias 'dei'='docker exec -it'
+
 ################################################################
 ## Bindings (History)
 ################################################################
