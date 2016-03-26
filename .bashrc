@@ -28,10 +28,11 @@ OPTIONS=("--graph" "--pretty=tformat:$FORMAT")
 ## Constants (Functions)
 ################################################################
 
-git_pretty_log() {
+function git_pretty_log() {
   git log "${OPTIONS[@]}" $* |
   less -FXRS
 }
+
 function git_status_working {
   git diff --quiet &> /dev/null
   echo $?
@@ -71,6 +72,12 @@ function bash_prompt {
   echo "$blue\u$reset@$blue\h$reset:$purple\W$reset"
 }
 
+function docker_clean_all {
+  docker rm $(docker ps -q -f status=exited) 2> /dev/null
+  docker volume rm $(docker volume ls -q -f dangling=true) 2> /dev/null
+  docker rmi $(docker images -q -f dangling=true) 2> /dev/null
+}
+
 ################################################################
 ## Aliases
 ################################################################
@@ -80,6 +87,7 @@ alias cucumber='bundle exec cucumber --color'
 alias rake='bundle exec rake'
 alias rspec='bundle exec rspec --color'
 alias rubocop='bundle exec rubocop'
+alias knife='bundle exec knife'
 
 ## Git aliases
 alias ga='git add'
@@ -92,6 +100,7 @@ alias gst='git status -sb'
 ## Docker aliases
 alias 'dri'='docker run --rm -it'
 alias 'dei'='docker exec -it'
+alias 'dca'='docker_clean_all'
 
 ################################################################
 ## Bindings (History)
