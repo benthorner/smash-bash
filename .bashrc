@@ -21,7 +21,7 @@ AUTHOR="%C(bold blue)%an%C(reset)"
 REFS="%C(bold red)%d%C(reset)"
 COMMENT="%s"
 
-FORMAT="$HASH $AGE $AUTHOR $REF $COMMENT"
+FORMAT="$HASH $AGE $AUTHOR $REFS $COMMENT"
 OPTIONS=("--graph" "--pretty=tformat:$FORMAT")
 
 ################################################################
