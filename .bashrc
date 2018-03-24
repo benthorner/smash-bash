@@ -29,33 +29,7 @@ OPTIONS=("--graph" "--pretty=tformat:$FORMAT")
 ################################################################
 
 function git_pretty_log() {
-  git log "${OPTIONS[@]}" $* |
-  less -FXRS
-}
-
-function git_status_working {
-  git diff --quiet &> /dev/null
-  echo $?
-}
-
-function git_status_staging {
-  git diff --quiet --cached &> /dev/null
-  echo $?
-}
-
-function git_status_colour {
-  if [ $(git_status_staging) != 0 ]; then
-    echo $red
-  elif [ $(git_status_working) != 0 ]; then
-    echo $yellow
-  else
-    echo $green
-  fi
-}
-
-function git_status {
-  git status &> /dev/null
-  echo "$?"
+  git log "${OPTIONS[@]}" $* | less -FXRS
 }
 
 function git_branch {
@@ -63,13 +37,13 @@ function git_branch {
 }
 
 function git_prompt {
-  if [ $(git_status) == 0 ]; then
-    echo -e "$(git_status_colour)$(git_branch)$reset"
+  if git branch &> /dev/null; then
+    echo -e "$blue$(git_branch)$reset"
   fi
 }
 
 function bash_prompt {
-  echo "$blue\u$reset@$blue\h$reset:$purple\W$reset"
+  echo "$purple\W$reset"
 }
 
 function docker_clean_all {
