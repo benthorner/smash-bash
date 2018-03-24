@@ -1,4 +1,4 @@
-# smash_bash
+# smash-bash
 
 A smashing config for bash.
 
@@ -6,11 +6,11 @@ A smashing config for bash.
 
 Run the following to get started.
 
-    git clone https://github.com/benthorner/smash_bash.git $HOME/.smash_bash
+    git clone https://github.com/benthorner/smash-bash.git $HOME/.smash-bash
 
 Then add the following to ''.bashrc'' (linux) or ''.profile'' (mac).
 
-    source $HOME/.smash_bash/.bashrc
+    source $HOME/.smash-bash/bashrc
 
 Now close and restart your terminal.
 
