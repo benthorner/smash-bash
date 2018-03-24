@@ -71,9 +71,9 @@ alias gl='git_pretty_log'
 alias gst='git status -sb'
 
 ## Docker aliases
-alias 'dri'='docker run --rm -it'
-alias 'dei'='docker exec -it'
-alias 'dca'='docker_clean_all'
+alias dri='docker run --rm -it'
+alias dei='docker exec -it'
+alias dca='docker_clean_all'
 
 ################################################################
 ## Bindings (History)
