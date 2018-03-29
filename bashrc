@@ -52,6 +52,10 @@ function docker_clean_all {
   docker rmi $(docker images -q -f dangling=true) 2> /dev/null
 }
 
+function command_exists {
+  type "$1" &> /dev/null
+}
+
 ################################################################
 ## Aliases
 ################################################################
@@ -86,9 +90,15 @@ bind '"\e[B": history-search-forward'
 ## Config (Git)
 ################################################################
 
-git config --global branch.autosetuprebase always
-git config --global color.ui auto
-git config --global push.default current
+if command_exists git; then
+  git config --global branch.autosetuprebase always
+  git config --global color.ui auto
+  git config --global push.default current
+fi
+
+if command_exists __git_complete; then
+  __git_complete gco _git_checkout
+fi
 
 ################################################################
 ## Config (Bash)

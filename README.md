@@ -2,6 +2,14 @@
 
 A smashing config for bash.
 
+## Prerequisites
+
+You will need the following.
+
+  - [Git](https://git-scm.com/) to manage repos
+  - [Docker](https://www.docker.com/) to manage containers
+  - [Git Bash Completion](https://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks) (optional)
+
 ## Install
 
 Run the following to get started.
