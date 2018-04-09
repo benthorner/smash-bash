@@ -65,6 +65,7 @@ alias cucumber='bundle exec cucumber --color'
 alias rake='bundle exec rake'
 alias rspec='bundle exec rspec --color'
 alias rubocop='bundle exec rubocop'
+alias rails='bundle exec rails'
 
 ## Git aliases
 alias ga='git add'
