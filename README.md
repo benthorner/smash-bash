@@ -32,6 +32,12 @@ The following aliases are helpful.
   - `gco` is `git checkout`
   - `gl` is a pretty git log
   - `gst` is `git status -sb`
+  - `gp` is `git push`
+  - `grm` is `git rebase master`
+  - `grc` is `git rebase --continue`
+  - `gra` is `git rebase --abort`
+  - `gs` is `git stash`
+  - `gsp` is `git stash pop`
   - `dri` is `docker run --rm -it`
   - `dei` is `docker exec -it`
   - `dca` cleans up docker trash

@@ -4,33 +4,12 @@
 
 bold="$(tput bold)"
 reset="\001$(tput sgr0)\002"
-
 blue="\001$bold$(tput setaf 4)\002"
-green="\001$bold$(tput setaf 2)\002"
 purple="\001$bold$(tput setaf 5)\002"
-red="\001$bold$(tput setaf 1)\002"
-yellow="\001$bold$(tput setaf 3)\002"
-
-################################################################
-## Constants (Git Log)
-################################################################
-
-HASH="%C(green)%h%C(reset)"
-AGE="%C(yellow)%ar%C(reset)"
-AUTHOR="%C(bold blue)%an%C(reset)"
-REFS="%C(bold red)%d%C(reset)"
-COMMENT="%s"
-
-FORMAT="$HASH $AGE $AUTHOR $REFS $COMMENT"
-OPTIONS=("--graph" "--pretty=tformat:$FORMAT")
 
 ################################################################
 ## Constants (Functions)
 ################################################################
-
-function git_pretty_log() {
-  git log "${OPTIONS[@]}" $* | less -FXRS
-}
 
 function git_branch {
   echo "$(git rev-parse --abbrev-ref HEAD)"
@@ -72,8 +51,14 @@ alias ga='git add'
 alias gaa='git add -A'
 alias gc='git commit'
 alias gco='git checkout'
-alias gl='git_pretty_log'
+alias gl='git log --oneline --graph'
 alias gst='git status -sb'
+alias gp='git push'
+alias grm='git rebase master'
+alias grc='git rebase --continue'
+alias gra='git rebase --abort'
+alias gs='git stash'
+alias gsp='git stash pop'
 
 ## Docker aliases
 alias dri='docker run --rm -it'
