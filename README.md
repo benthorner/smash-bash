@@ -33,6 +33,7 @@ The following aliases are helpful.
   - `gl` is a pretty git log
   - `gst` is `git status -sb`
   - `gp` is `git push`
+  - `gpl` is `git pull`
   - `grm` is `git rebase master`
   - `grc` is `git rebase --continue`
   - `gra` is `git rebase --abort`
