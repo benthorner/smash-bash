@@ -29,6 +29,7 @@ The following aliases are helpful.
   - `ga` is `git add`
   - `gaa` is `git add -A`
   - `gc` is `git commit`
+  - `gca` is `git commit --amend`
   - `gco` is `git checkout`
   - `gl` is a pretty git log
   - `gst` is `git status -sb`
