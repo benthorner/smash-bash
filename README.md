@@ -35,9 +35,7 @@ The following aliases are helpful.
   - `gst` is `git status -sb`
   - `gp` is `git push`
   - `gpl` is `git pull`
-  - `grm` is `git rebase master`
   - `grc` is `git rebase --continue`
-  - `gra` is `git rebase --abort`
   - `gs` is `git stash`
   - `gsp` is `git stash pop`
   - `dri` is `docker run --rm -it`
