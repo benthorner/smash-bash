@@ -26,9 +26,9 @@ function bash_prompt {
 }
 
 function docker_clean_all {
-  docker rm $(docker ps -q -f status=exited) 2> /dev/null
-  docker volume rm $(docker volume ls -q -f dangling=true) 2> /dev/null
-  docker rmi $(docker images -q -f dangling=true) 2> /dev/null
+  docker container prune -f
+  docker volume rm $(docker volume ls -q -f 'dangling=true' | grep -x '.\{64,\}') 2> /dev/null
+  docker image prune -f
 }
 
 function command_exists {
@@ -60,9 +60,8 @@ alias gs='git stash'
 alias gsp='git stash pop'
 
 ## Docker aliases
-alias dri='docker run --rm -it'
-alias dei='docker exec -it'
 alias dca='docker_clean_all'
+alias dps='docker ps -a'
 
 ################################################################
 ## Bindings (History)

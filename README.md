@@ -38,8 +38,7 @@ The following aliases are helpful.
   - `grc` is `git rebase --continue`
   - `gs` is `git stash`
   - `gsp` is `git stash pop`
-  - `dri` is `docker run --rm -it`
-  - `dei` is `docker exec -it`
+  - `dps` is `docker ps -a`
   - `dca` cleans up docker trash
 
 It does a few other great things too.
